@@ -15,3 +15,9 @@ export const Nav = styled.nav`
         text-decoration: none;
     }
 `;
+
+export const Contacts = styled.div`
+    display: flex;
+    gap: 1.25em;
+    align-items: center;
+`;
