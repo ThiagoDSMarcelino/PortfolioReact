@@ -4,7 +4,7 @@ import React from 'react';
 import { Nav, Contacts } from './styled';
 
 export default function Main() {
-    const iconSize = 20;
+    const iconSize = 24;
 
     return (
         <Nav>

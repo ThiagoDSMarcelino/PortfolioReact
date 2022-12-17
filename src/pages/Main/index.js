@@ -1,7 +1,7 @@
 import { SiPython, SiCsharp, SiMicrosoftsqlserver, SiJavascript, SiTypescript, SiReact, SiDjango, SiAngular } from 'react-icons/si';
 import React from 'react';
 
-import { Progress, ProgressBox, Name, About, AboutText, ColerfullText } from './styled'
+import { Sla, Progress, ProgressBox, Name, About, AboutText, ColerfullText } from './styled'
 import ProgressBar from './../../components/ProgressBar';
 
 export default function Main() {
@@ -22,12 +22,12 @@ export default function Main() {
     const nbsp = "\u00A0";
     
     return (
-        <>
+        <Sla>
             <About>
                 <span>HEY THERE, I'M</span>
                 <Name>THIAGO S. MARCELINO</Name>
                 <AboutText>
-                    A Systems Development apprentice at Bosch enchanted by AI and Mathematics <br/>
+                    A {nbsp}<ColerfullText>Systems Development</ColerfullText>{nbsp} apprentice at Bosch enchanted by AI and Mathematics <br/>
                     I am currently studying the 1st semester of Computer Science at UTP
                 </AboutText>
             </About>
@@ -63,6 +63,6 @@ export default function Main() {
                     <SiAngular color={angular} size={iconSize}/><ProgressBar bgcolor={angular} completed={"0%"} />
                 </Progress>
             </ProgressBox>
-        </>
+        </Sla>
     );
 }

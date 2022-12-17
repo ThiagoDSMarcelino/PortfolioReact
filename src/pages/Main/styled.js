@@ -3,6 +3,13 @@ import styled from "styled-components";
 import * as colors from '../../config/colors'
 
 
+
+export const Sla = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+
+`
 export const About = styled.div`
     display: flex;
     flex-direction: column;
@@ -19,7 +26,7 @@ export const AboutText = styled.p`
 `
 
 export const ColerfullText = styled.span`
-    background-image: linear-gradient(to left, ${colors.primaryColor}, ${colors.secondaryColor}, ${colors.tertiaryColor});
+    background-image: linear-gradient(to right, ${colors.primaryColor}, ${colors.secondaryColor}, ${colors.tertiaryColor});
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;

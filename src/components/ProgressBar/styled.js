@@ -8,8 +8,8 @@ export const ProgressBarContainer = styled.div`
 
 export const Filled= styled.div`
     height: 100%;
-    width: ${props => props.completed ? props.completed : "0%"};
-    background-color: ${props => props.bgcolor ? props.bgcolor : "darkblue"};
+    width: ${props => props.completed !== "0%" ? props.completed : "2.5em"};
+    background-color: ${props => props.color ? props.color : "darkblue"};
     border-radius: inherit;
     text-align: right;
     transition: width 1s ease-in-out;

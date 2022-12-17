@@ -7,7 +7,7 @@ import Main from '../pages/Main';
 export default function Urls() {
     return (
         <Routes>
-            <Route exact path='/' element={<Main />} />
+            <Route exact path='/Portfolio/' element={<Main />} />
             
             <Route path='*' element={<Page404 />} />
         </Routes>
