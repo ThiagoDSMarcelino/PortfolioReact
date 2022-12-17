@@ -27,7 +27,7 @@ export default function Main() {
                 <span>HEY THERE, I'M</span>
                 <Name>THIAGO S. MARCELINO</Name>
                 <AboutText>
-                    A {nbsp}<ColerfullText>Systems Development</ColerfullText>{nbsp} apprentice at Bosch enchanted by AI and Mathematics
+                    A {nbsp}<ColerfullText>Systems Development</ColerfullText>{nbsp} apprentice at Bosch enchanted by AI and Mathematics <br/>
                     I am currently studying the 1st semester of Computer Science at UTP
                 </AboutText>
             </About>
