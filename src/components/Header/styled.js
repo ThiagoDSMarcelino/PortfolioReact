@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { secondaryColor, primaryColor } from '../../config/colors'
+import { primarybackground, primaryColor } from '../../config/colors'
 
 export const Nav = styled.nav`
     background: ${ primaryColor };
@@ -9,7 +9,7 @@ export const Nav = styled.nav`
     justify-content: space-between;
 
     a {
-        color: ${ secondaryColor };
+        color: ${ primarybackground };
         font-weight: bold;
         display: flex;
         text-decoration: none;

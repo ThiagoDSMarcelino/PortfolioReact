@@ -8,7 +8,7 @@ export default function ProgressBar(props) {
     return (
         <ProgressBarContainer>
           <Filled bgcolor={bgcolor} completed={completed}>
-            <Label>{completed}%</Label>
+            <Label>{completed}</Label>
           </Filled>
         </ProgressBarContainer>
     );

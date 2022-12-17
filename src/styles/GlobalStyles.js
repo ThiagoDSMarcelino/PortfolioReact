@@ -12,7 +12,7 @@ export default createGlobalStyle`
 
     body {
         font-family: sans-serif;
-        background: ${ colors.secondaryColor };
+        background: ${ colors.primarybackground };
     }
 
     html, body, #root {
@@ -22,7 +22,7 @@ export default createGlobalStyle`
 
 export const Container = styled.section`
     max-width: 75%;
-    background: ${ colors.secondaryColor };
+    background: ${ colors.primarybackground };
     margin: 30px auto;
     padding: 30px;
     border-radius: 4px;
