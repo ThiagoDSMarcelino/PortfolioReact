@@ -10,6 +10,7 @@ export const Sla = styled.div`
     gap: 2.5vh;
 
 `
+
 export const About = styled.div`
     display: flex;
     flex-direction: column;
@@ -21,7 +22,6 @@ export const Name = styled.h1`
 `
 export const AboutText = styled.p`
     font-size: 1.5em;
-    display: flex;
     text-align: justify;
 `
 
