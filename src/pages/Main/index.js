@@ -1,7 +1,7 @@
 import { SiPython, SiCsharp, SiMicrosoftsqlserver, SiJavascript, SiTypescript, SiReact, SiDjango, SiAngular } from 'react-icons/si';
 import React from 'react';
 
-import { Sla, Progress, ProgressBox, Name, About, AboutText, ColerfullText } from './styled'
+import { Sla, Progress, List, Name, About, AboutText, ColerfullText } from './styled'
 import ProgressBar from './../../components/ProgressBar';
 
 export default function Main() {
@@ -18,8 +18,6 @@ export default function Main() {
     const react = "#61DBFB";
     const django = "#103E2E";
     const angular = "#DD0031";
-
-    const nbsp = "\u00A0";
     
     return (
         <Sla>
@@ -27,12 +25,12 @@ export default function Main() {
                 <span>HEY THERE, I'M</span>
                 <Name>THIAGO S. MARCELINO</Name>
                 <AboutText>
-                    A {nbsp}<ColerfullText>Systems Development</ColerfullText>{nbsp} apprentice at Bosch enchanted by AI and Mathematics <br/>
+                    A <ColerfullText>Systems Development</ColerfullText> apprentice at Bosch enchanted by AI and Mathematics <br/>
                     I am currently studying the 1st semester of Computer Science at UTP
                 </AboutText>
             </About>
 
-            <ProgressBox>
+            <List>
                 <h2>Main Programming Languages</h2>
                 <Progress>
                     <SiPython color={pythonColor} size={iconSize}/><ProgressBar bgcolor={pythonColor} completed={"60%"} />
@@ -49,9 +47,9 @@ export default function Main() {
                 <Progress>
                     <SiMicrosoftsqlserver color={sqlServerColor} size={iconSize}/><ProgressBar bgcolor={sqlServerColor} completed={"30%"} />
                 </Progress>
-            </ProgressBox>
+            </List>
 
-            <ProgressBox>
+            <List>
                 <h2>Main Frameworks</h2>
                 <Progress>
                     <SiReact color={react} size={iconSize}/><ProgressBar bgcolor={react} completed={"35%"} />
@@ -62,7 +60,7 @@ export default function Main() {
                 <Progress>
                     <SiAngular color={angular} size={iconSize}/><ProgressBar bgcolor={angular} completed={"0%"} />
                 </Progress>
-            </ProgressBox>
+            </List>
         </Sla>
     );
 }

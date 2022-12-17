@@ -33,7 +33,7 @@ export const ColerfullText = styled.span`
     color: transparent;
 `
 
-export const ProgressBox = styled.div`
+export const List = styled.ul`
     background-color: ${colors.secondarybackground};
     padding: 5px;
     border-radius: 15px;
@@ -43,7 +43,7 @@ export const ProgressBox = styled.div`
     flex-direction: column;
 `
 
-export const Progress = styled.div`
+export const Progress = styled.li`
     display: flex;
     align-items: center;
     gap: 1.5em;

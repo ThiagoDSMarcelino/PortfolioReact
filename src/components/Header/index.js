@@ -8,7 +8,7 @@ export default function Main() {
 
     return (
         <Nav>
-            <a href='/'>
+            <a href='/Portfolio/'>
                 <h1>Thiago S. Marcelino</h1>
             </a>
             <Contacts>
