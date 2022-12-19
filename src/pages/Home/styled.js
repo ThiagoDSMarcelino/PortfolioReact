@@ -17,6 +17,8 @@ export const About = styled.div`
     display: flex;
     gap: 5px;
 
+    h2 { font-size: 1.75em; }
+
     p {
         text-align: justify;
         font-size: 1.5em;

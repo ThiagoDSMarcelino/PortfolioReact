@@ -1,9 +1,11 @@
 import React from 'react';
 
-export default function Footer() {
+import { Footer } from './styled';
+
+export default function Footers() {
     return (
-        <footer>
-            &copy; Thiago S. Marcelino
-        </footer>
+        <Footer>
+            <h4>&copy; Thiago S. Marcelino</h4>
+        </Footer>
     );
 }

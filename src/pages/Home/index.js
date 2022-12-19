@@ -23,7 +23,7 @@ export default function Home() {
         <ContainerHome>
             <About>
                 <span>HEY THERE, I'M</span>
-                <h1>THIAGO S. MARCELINO</h1>
+                <h2>THIAGO S. MARCELINO</h2>
                 <p>
                     A <ColerfullText>Systems Development</ColerfullText> apprentice at Bosch enchanted by AI and Mathematics <br/>
                     I am currently studying the 1st semester of Computer Science at UTP
