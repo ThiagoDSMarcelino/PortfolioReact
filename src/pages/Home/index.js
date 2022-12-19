@@ -64,7 +64,7 @@ export default function Home() {
                 <h2>Skills</h2>
                 <Item>
                     <SiScikitlearn color={scikitlearn} size={iconSize} />
-                    <h3>AI project to know music popularity, using <a href="https://github.com/ThiagoDSMarcelino/AI-Spotify">Scikit-Learn</a></h3>
+                    <h3>AI project to know music popularity, using <a href="https://github.com/ThiagoDSMarcelino/AI-Spotify" target="_blank" rel="noreferrer">Scikit-Learn</a></h3>
                 </Item>
                 <Item>
                     <SlBubble size={iconSize} />
