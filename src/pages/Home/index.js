@@ -25,7 +25,7 @@ export default function Home() {
     return (
         <ContainerHome>
             <About>
-                {true ? <img src={ProfilePicture} alt='nome' /> : <FaUserCircle size={180} />}
+                {false ? <img src={ProfilePicture} alt='nome' /> : <FaUserCircle size={180} />}
                 <AboutText>
                     <span>HEY THERE, I'M</span>
                     <h2>THIAGO S. MARCELINO</h2>
