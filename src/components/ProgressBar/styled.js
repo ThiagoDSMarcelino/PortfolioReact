@@ -1,25 +1,28 @@
 import styled from "styled-components";
 
+import { primaryColor, primarybackground } from '../../config/colors'
+
+
 export const ProgressBarContainer = styled.div`
+    border-radius: 50px;
     height: 30px;
     width: 100%;
-    border-radius: 50px;
 `;
 
 export const Filled= styled.div`
-    height: 100%;
-    width: ${props => props.completed !== "0%" ? props.completed : "2.5em"};
-    background-color: ${props => props.color ? props.color : "darkblue"};
+    width: ${ props => props.completed !== '0%' ? props.completed : '2.5em' };
+    background-color: ${ props => props.color ? props.color : primaryColor };
+    transition: width 1s ease-in-out;
     border-radius: inherit;
     text-align: right;
-    transition: width 1s ease-in-out;
+    height: 100%;
 `;
 
 export const Label = styled.span`
-    padding: 5px;
-    color: white;
+    vertical-align: middle;
+    display: inline-block;
     font-weight: bold;
     font-size: 1.25em;
-    display: inline-block;
-    vertical-align: middle;
+    color: ${ primarybackground };
+    padding: 5px;
 `;

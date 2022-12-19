@@ -1,28 +1,26 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import * as colors from '../../config/colors'
+import * as colors from '../../config/colors';
+import { Container } from '../../styles/GlobalStyles';
 
 
 
-export const Sla = styled.div`
-    display: flex;
+export const ContainerHome = styled(Container)`
     flex-direction: column;
+    display: flex;
     gap: 2.5vh;
-
 `
 
 export const About = styled.div`
-    display: flex;
     flex-direction: column;
     font-weight: bold;
+    display: flex;
     gap: 5px;
-`
-export const Name = styled.h1`
-    font-size: 2em;
-`
-export const AboutText = styled.p`
-    font-size: 1.5em;
-    text-align: justify;
+
+    p {
+        text-align: justify;
+        font-size: 1.5em;
+    }
 `
 
 export const ColerfullText = styled.span`
@@ -35,16 +33,15 @@ export const ColerfullText = styled.span`
 
 export const List = styled.ul`
     background-color: ${colors.secondarybackground};
-    padding: 5px;
+    flex-direction: column;
     border-radius: 15px;
+    display: flex;
     padding: 15px;
     gap: 1.5rem;
-    display: flex;
-    flex-direction: column;
 `
 
 export const Progress = styled.li`
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 1.5em;
 `

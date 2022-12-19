@@ -2,14 +2,14 @@ import { Routes, Route } from 'react-router-dom';
 import React from 'react';
 
 import Page404 from '../pages/Page404';
-import Main from '../pages/Main';
+import Home from '../pages/Home';
 
 export default function Urls() {
     return (
         <Routes>
-            <Route exact path='/Portfolio/' element={<Main />} />
+            <Route exact path="/Portfolio" element={<Home />} />
             
-            <Route path='*' element={<Page404 />} />
+            <Route path="*" element={<Page404 />} />
         </Routes>
     );
 }

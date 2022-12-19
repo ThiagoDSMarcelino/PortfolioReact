@@ -20,7 +20,7 @@ export default createGlobalStyle`
     }
 `;
 
-export const Container = styled.section`
+export const Container = styled.main`
     max-width: 75%;
     background: ${ colors.primarybackground };
     margin: 30px auto;
