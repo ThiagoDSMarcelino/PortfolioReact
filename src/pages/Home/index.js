@@ -19,7 +19,7 @@ export default function Home() {
     const react = '#61DBFB';
 
     //Skils Colors
-    const artificialIntelligence = '#EC9C4B';
+    const scikitlearn = '#EC9C4B';
 
 
     return (
@@ -63,7 +63,7 @@ export default function Home() {
             <List>
                 <h2>Skills</h2>
                 <Item>
-                    <SiScikitlearn color={artificialIntelligence} size={iconSize} />
+                    <SiScikitlearn color={scikitlearn} size={iconSize} />
                     <h3>AI project to know music popularity, using <a href="https://github.com/ThiagoDSMarcelino/AI-Spotify">Scikit-Learn</a></h3>
                 </Item>
                 <Item>
