@@ -19,10 +19,10 @@ export const Filled= styled.div`
 `;
 
 export const Label = styled.span`
+    color: ${ primarybackground };
     vertical-align: middle;
     display: inline-block;
     font-weight: bold;
     font-size: 1.25em;
-    color: ${ primarybackground };
     padding: 5px;
 `;

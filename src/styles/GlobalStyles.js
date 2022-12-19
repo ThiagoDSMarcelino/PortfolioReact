@@ -4,15 +4,15 @@ import * as colors from '../config/colors'
 
 export default createGlobalStyle`
     * {
-        margin: 0;
-        padding: 0;
-        outline: none;
         box-sizing: border-box;
+        outline: none;
+        padding: 0;
+        margin: 0;
     }
 
     body {
-        font-family: sans-serif;
         background: ${ colors.primarybackground };
+        font-family: sans-serif;
     }
 
     html, body, #root {
@@ -21,10 +21,10 @@ export default createGlobalStyle`
 `;
 
 export const Container = styled.main`
-    max-width: 75%;
     background: ${ colors.primarybackground };
-    margin: 30px auto;
-    padding: 30px;
-    border-radius: 4px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    margin: 30px auto;
+    max-width: 75%;
+    padding: 30px;
 `;

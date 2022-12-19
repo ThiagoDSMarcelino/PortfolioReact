@@ -1,7 +1,10 @@
-import { SiPython, SiCsharp, SiMicrosoftsqlserver, SiJavascript, SiTypescript, SiReact, SiDjango, SiAngular } from 'react-icons/si';
+import { SiPython, SiCsharp, SiMicrosoftsqlserver, SiReact, SiScikitlearn } from 'react-icons/si';
+import { FaUserCircle } from 'react-icons/fa';
+import { SlBubble } from 'react-icons/sl';
 import React from 'react';
 
-import { ContainerHome, Item, List, About, ColerfullText } from './styled'
+import { ContainerHome, About, AboutText, ColerfullText, List, Item } from './styled';
+import ProfilePicture from '../../styles/ProfilePicture.jpg';
 import ProgressBar from './../../components/ProgressBar';
 
 export default function Home() {
@@ -10,24 +13,27 @@ export default function Home() {
     //Programming Language Colors
     const pythonColor = '#00304D';
     const csharpColor = '#662E93';
-    const javaScriptColor = '#F7E018';
-    const typeScriptColorColor = '#007ACC';
     const sqlServerColor = '#CA2321';
 
     //Framework Colors
     const react = '#61DBFB';
-    const django = '#103E2E';
-    const angular = '#DD0031';
+
+    //Skils Colors
+    const artificialIntelligence = '#EC9C4B';
+
 
     return (
         <ContainerHome>
             <About>
-                <span>HEY THERE, I'M</span>
-                <h2>THIAGO S. MARCELINO</h2>
-                <p>
-                    A <ColerfullText>Systems Development</ColerfullText> apprentice at Bosch enchanted by AI and Mathematics <br/>
-                    I am currently studying the 1st semester of Computer Science at UTP
-                </p>
+                {true ? <img src={ProfilePicture} alt='nome' /> : <FaUserCircle size={180} />}
+                <AboutText>
+                    <span>HEY THERE, I'M</span>
+                    <h2>THIAGO S. MARCELINO</h2>
+                    <p>
+                        A <ColerfullText>Systems Development Apprentice</ColerfullText> at Bosch enchanted by AI and Mathematics <br/>
+                        I am currently studying the 1st semester of Computer Science at UTP
+                    </p>
+                </AboutText>
             </About>
 
             <List>
@@ -41,14 +47,6 @@ export default function Home() {
                     <ProgressBar bgcolor={csharpColor} completed={'75%'} />
                 </Item>
                 <Item>
-                    <SiJavascript color={javaScriptColor} size={iconSize} />
-                    <ProgressBar bgcolor={javaScriptColor} completed={'45%'} />
-                </Item>
-                <Item>
-                    <SiTypescript color={typeScriptColorColor} size={iconSize} />
-                    <ProgressBar bgcolor={typeScriptColorColor} completed={'20%'} />
-                </Item>
-                <Item>
                     <SiMicrosoftsqlserver color={sqlServerColor} size={iconSize} />
                     <ProgressBar bgcolor={sqlServerColor} completed={'30%'} />
                 </Item>
@@ -60,13 +58,17 @@ export default function Home() {
                     <SiReact color={react} size={iconSize} />
                     <ProgressBar bgcolor={react} completed={'35%'} />
                 </Item>
+            </List>
+
+            <List>
+                <h2>Skills</h2>
                 <Item>
-                    <SiDjango color={django} size={iconSize} />
-                    <ProgressBar bgcolor={django} completed={'20%'} />
+                    <SiScikitlearn color={artificialIntelligence} size={iconSize} />
+                    <h3>AI project to know music popularity, using <a href="https://github.com/ThiagoDSMarcelino/AI-Spotify">Scikit-Learn</a></h3>
                 </Item>
                 <Item>
-                    <SiAngular color={angular} size={iconSize} />
-                    <ProgressBar bgcolor={angular} completed={'0%'} />
+                    <SlBubble size={iconSize} />
+                    <h3>I am fluent in Portuguese and I have intermediate English</h3>
                 </Item>
             </List>
         </ContainerHome>

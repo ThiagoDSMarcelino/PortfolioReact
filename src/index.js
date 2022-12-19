@@ -8,5 +8,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-// A B C D E
-// 8 9 4 7 10

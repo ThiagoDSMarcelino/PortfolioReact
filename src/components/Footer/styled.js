@@ -5,7 +5,5 @@ export const Footer = styled.footer`
     padding: 5px;
     text-align: center;
 
-    h2 {
-        font-size: 1.25em;
-    }
+    h2 { font-size: 1.25em; }
 `
