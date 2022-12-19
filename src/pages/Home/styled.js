@@ -42,7 +42,7 @@ export const List = styled.ul`
     gap: 1.5rem;
 `
 
-export const Progress = styled.li`
+export const Item = styled.li`
     align-items: center;
     display: flex;
     gap: 1.5em;

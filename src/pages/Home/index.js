@@ -1,7 +1,7 @@
 import { SiPython, SiCsharp, SiMicrosoftsqlserver, SiJavascript, SiTypescript, SiReact, SiDjango, SiAngular } from 'react-icons/si';
 import React from 'react';
 
-import { ContainerHome, Progress, List, About, ColerfullText } from './styled'
+import { ContainerHome, Item, List, About, ColerfullText } from './styled'
 import ProgressBar from './../../components/ProgressBar';
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
     const react = '#61DBFB';
     const django = '#103E2E';
     const angular = '#DD0031';
-    
+
     return (
         <ContainerHome>
             <About>
@@ -32,34 +32,42 @@ export default function Home() {
 
             <List>
                 <h2>Main Programming Languages</h2>
-                <Progress>
-                    <SiPython color={pythonColor} size={iconSize}/><ProgressBar bgcolor={pythonColor} completed={'60%'} />
-                </Progress>
-                <Progress>
-                    <SiCsharp color={csharpColor} size={iconSize}/><ProgressBar bgcolor={csharpColor} completed={'75%'} />
-                </Progress>
-                <Progress>
-                    <SiJavascript color={javaScriptColor} size={iconSize}/><ProgressBar bgcolor={javaScriptColor} completed={'45%'} />
-                </Progress>
-                <Progress>
-                    <SiTypescript color={typeScriptColorColor} size={iconSize}/><ProgressBar bgcolor={typeScriptColorColor} completed={'20%'} />
-                </Progress>
-                <Progress>
-                    <SiMicrosoftsqlserver color={sqlServerColor} size={iconSize}/><ProgressBar bgcolor={sqlServerColor} completed={'30%'} />
-                </Progress>
+                <Item>
+                    <SiPython color={pythonColor} size={iconSize} />
+                    <ProgressBar bgcolor={pythonColor} completed={'60%'} />
+                </Item>
+                <Item>
+                    <SiCsharp color={csharpColor} size={iconSize} />
+                    <ProgressBar bgcolor={csharpColor} completed={'75%'} />
+                </Item>
+                <Item>
+                    <SiJavascript color={javaScriptColor} size={iconSize} />
+                    <ProgressBar bgcolor={javaScriptColor} completed={'45%'} />
+                </Item>
+                <Item>
+                    <SiTypescript color={typeScriptColorColor} size={iconSize} />
+                    <ProgressBar bgcolor={typeScriptColorColor} completed={'20%'} />
+                </Item>
+                <Item>
+                    <SiMicrosoftsqlserver color={sqlServerColor} size={iconSize} />
+                    <ProgressBar bgcolor={sqlServerColor} completed={'30%'} />
+                </Item>
             </List>
 
             <List>
                 <h2>Main Frameworks</h2>
-                <Progress>
-                    <SiReact color={react} size={iconSize}/><ProgressBar bgcolor={react} completed={'35%'} />
-                </Progress>
-                <Progress>
-                    <SiDjango color={django} size={iconSize}/><ProgressBar bgcolor={django} completed={'20%'} />
-                </Progress>
-                <Progress>
-                    <SiAngular color={angular} size={iconSize}/><ProgressBar bgcolor={angular} completed={'0%'} />
-                </Progress>
+                <Item>
+                    <SiReact color={react} size={iconSize} />
+                    <ProgressBar bgcolor={react} completed={'35%'} />
+                </Item>
+                <Item>
+                    <SiDjango color={django} size={iconSize} />
+                    <ProgressBar bgcolor={django} completed={'20%'} />
+                </Item>
+                <Item>
+                    <SiAngular color={angular} size={iconSize} />
+                    <ProgressBar bgcolor={angular} completed={'0%'} />
+                </Item>
             </List>
         </ContainerHome>
     );
