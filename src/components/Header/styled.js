@@ -29,8 +29,8 @@ export const Nav = styled.nav`
     }
 `;
 
-export const Sla = styled.span`
+export const Bar = styled.span`
     height: calc(100% + 10px);
-    border: 1px solid black;
+    border: 1px solid ${ primaryColor };
     margin: 0 -10.5px;
 `

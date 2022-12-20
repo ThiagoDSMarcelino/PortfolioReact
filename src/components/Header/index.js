@@ -1,7 +1,7 @@
 import { SiLinkedin, SiGmail, SiGithub } from 'react-icons/si';
 import React from 'react';
 
-import { Nav, Sla } from './styled';
+import { Nav, Bar } from './styled';
 
 export default function Header() {
     const iconSize = 24;
@@ -9,7 +9,7 @@ export default function Header() {
     return (
         <header>
             <Nav>
-                <a href="/Portfolio">
+                <a href="/">
                     <h1>Thiago S. Marcelino</h1>
                 </a>
                 <ul>
@@ -18,13 +18,13 @@ export default function Header() {
                             <SiLinkedin color="#007EC6" size={iconSize} />
                         </a>
                     </li>
-                    <Sla />
+                    <Bar />
                     <li>
                         <a href="mailto:thiagodsmarcelino@gmail.com?subject=Hi, Thiago! (from Website)" target="_blank" rel="noreferrer">
                             <SiGmail color="#E05D44" size={iconSize} />
                         </a>
                     </li>
-                    <Sla />
+                    <Bar />
                     <li>
                         <a href="https://github.com/ThiagoDSMarcelino" target="_blank" rel="noreferrer">
                             <SiGithub color={"#000000"} size={iconSize} />

@@ -1,6 +1,6 @@
 import { SiPython, SiCsharp, SiMicrosoftsqlserver, SiReact, SiScikitlearn } from 'react-icons/si';
 import { FaUserCircle } from 'react-icons/fa';
-import { SlBubble } from 'react-icons/sl';
+import { SlBubble, SlGameController } from 'react-icons/sl';
 import React from 'react';
 
 import { ContainerHome, About, AboutText, ColerfullText, List, Item } from './styled';
@@ -61,11 +61,18 @@ export default function Home() {
             </List>
 
             <List>
-                <h2>Skills</h2>
+                <h2>Projects</h2>
                 <Item>
                     <SiScikitlearn color={scikitlearn} size={iconSize} />
                     <h3>AI project to know music popularity, using <a href="https://github.com/ThiagoDSMarcelino/AI-Spotify" target="_blank" rel="noreferrer">Scikit-Learn</a></h3>
                 </Item>
+                <Item>
+                    <SlGameController size={iconSize} />
+                    <h3>Dungeon style game, using <a href="https://github.com/ThiagoDSMarcelino/AI-Spotify" target="_blank" rel="noreferrer">Pygame</a></h3>
+                </Item>
+            </List>
+            <List>
+                <h2>Skills</h2>
                 <Item>
                     <SlBubble size={iconSize} />
                     <h3>I am fluent in Portuguese and I have intermediate English</h3>
