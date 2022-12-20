@@ -68,7 +68,7 @@ export default function Home() {
                 </Item>
                 <Item>
                     <SlGameController size={iconSize} />
-                    <h3>Dungeon style game, using <a href="https://github.com/ThiagoDSMarcelino/AI-Spotify" target="_blank" rel="noreferrer">Pygame</a></h3>
+                    <h3>Dungeon style game, using <a href="https://github.com/ThiagoDSMarcelino/FrogBattle" target="_blank" rel="noreferrer">Pygame</a></h3>
                 </Item>
             </List>
             <List>
