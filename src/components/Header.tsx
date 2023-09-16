@@ -1,18 +1,20 @@
+import { faEnvelope, faSun, faMoon } from '@fortawesome/free-regular-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { useThemeContext } from '../contexts/ThemeContexts';
+
 import Container from 'react-bootstrap/Container';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import Navbar from 'react-bootstrap/Navbar';
 import Stack from 'react-bootstrap/Stack'
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+
 import { Link } from 'react-router-dom';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faSun, faMoon } from '@fortawesome/free-regular-svg-icons';
-import { useThemeContext } from '../../contexts/ThemeContexts';
-import './styles.sass'
 
 function Header() {
     const { toggleTheme, theme } = useThemeContext();
-    const themeIcon = theme == 'light' ? faSun : faMoon;
+    const themeIcon = theme === 'light' ? faSun : faMoon;
 
     return (
         <Navbar bg={theme} data-bs-theme={theme} expand='md' className='mb-3'>
@@ -41,7 +43,7 @@ function Header() {
                             </Nav.Link>
 
                             <Nav.Link as={Link} to='/projects'>
-                                projects
+                                Projects
                             </Nav.Link>
 
                             <div className='vr' />
