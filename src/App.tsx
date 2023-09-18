@@ -13,17 +13,17 @@ import HomePage from './views/HomePage';
 import Page404 from './views/Page404';
 
 function App() {
-  return (
-    <ThemeProvider>
-      <Header />
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/projects' element={<ProjectPages />} />
-        <Route path='*' element={<Page404 />} />
-      </Routes>
-      <Footer />
-    </ThemeProvider>
-  );
+	return (
+		<ThemeProvider>
+			<Header />
+			<Routes>
+				<Route path='/' element={<HomePage />} />
+				<Route path='/projects' element={<ProjectPages />} />
+				<Route path='*' element={<Page404 />} />
+			</Routes>
+			<Footer />
+		</ThemeProvider>
+	);
 }
 
 export default App;
