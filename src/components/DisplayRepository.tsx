@@ -1,6 +1,7 @@
+import '../styles/useful.sass';
+
 import Card from 'react-bootstrap/Card';
 import Repository from '../models/Repository';
-import '../styles/useful.sass';
 
 interface Props {
 	repo: Repository;

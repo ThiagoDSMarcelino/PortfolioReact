@@ -1,13 +1,17 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import GitHubService from '../services/GitHubService';
 import { useEffect, useState } from 'react';
-import Repository from '../models/Repository';
+
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
 import DisplayRepository from '../components/DisplayRepository';
+import GitHubService from '../services/GitHubService';
+import Repository from '../models/Repository';
+import Row from 'react-bootstrap/Row';
+import { faL } from '@fortawesome/free-solid-svg-icons';
+import { useLoadingContext } from '../contexts/LoadingContext';
 
 const ProjectPages: React.FC = () => {
 	const [repos, setRepos] = useState<Repository[]>([]);
+	const { setLoading } = useLoadingContext();
 
 	useEffect(() => {
 		const getData = async () => {
@@ -18,7 +22,9 @@ const ProjectPages: React.FC = () => {
 			}
 		};
 
+		setLoading(true);
 		getData();
+		setLoading(false);
 	}, []);
 
 	return (

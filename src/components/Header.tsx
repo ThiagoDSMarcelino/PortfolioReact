@@ -1,16 +1,14 @@
-import { faEnvelope, faSun, faMoon } from '@fortawesome/free-regular-svg-icons';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import { useThemeContext } from '../contexts/ThemeContexts';
+import { faEnvelope, faMoon, faSun } from '@fortawesome/free-regular-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import Container from 'react-bootstrap/Container';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import Navbar from 'react-bootstrap/Navbar';
-import Stack from 'react-bootstrap/Stack';
-import Nav from 'react-bootstrap/Nav';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import Stack from 'react-bootstrap/Stack';
+import { useThemeContext } from '../contexts/ThemeContext';
 
 const Header: React.FC = () => {
 	const { toggleTheme, theme } = useThemeContext();

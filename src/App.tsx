@@ -1,29 +1,33 @@
-import { ThemeProvider } from './contexts/ThemeContexts';
-
-import { Route, Routes } from 'react-router-dom';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/main.sass';
 
-import Header from './components/Header';
+import { Route, Routes } from 'react-router-dom';
+
 import Footer from './components/Footer';
-
-import ProjectPages from './views/ProjectsPage';
+import Header from './components/Header';
 import HomePage from './views/HomePage';
+import LoadingOverlay from './components/LoadingOverlay';
+import LoadingProvider from './contexts/LoadingContextProvider';
 import Page404 from './views/Page404';
+import ProjectPages from './views/ProjectsPage';
+import React from 'react';
+import ThemeProvider from './contexts/ThemeContextProvider';
 
-function App() {
+const App: React.FC = () => {
 	return (
-		<ThemeProvider>
-			<Header />
-			<Routes>
-				<Route path='/' element={<HomePage />} />
-				<Route path='/projects' element={<ProjectPages />} />
-				<Route path='*' element={<Page404 />} />
-			</Routes>
-			<Footer />
-		</ThemeProvider>
+		<LoadingProvider>
+			<ThemeProvider>
+				<LoadingOverlay />
+				<Header />
+				<Routes>
+					<Route path='/' element={<HomePage />} />
+					<Route path='/projects' element={<ProjectPages />} />
+					<Route path='*' element={<Page404 />} />
+				</Routes>
+				<Footer />
+			</ThemeProvider>
+		</LoadingProvider>
 	);
-}
+};
 
 export default App;

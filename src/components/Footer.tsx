@@ -1,4 +1,4 @@
-import { useThemeContext } from '../contexts/ThemeContexts';
+import { useThemeContext } from '../contexts/ThemeContext';
 
 const Footer: React.FC = () => {
 	const { theme } = useThemeContext();
