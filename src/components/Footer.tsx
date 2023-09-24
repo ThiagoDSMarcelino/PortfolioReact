@@ -1,14 +1,14 @@
 import { useThemeContext } from '../contexts/ThemeContext';
 
 const Footer: React.FC = () => {
-	const { theme } = useThemeContext();
-	const textColor = theme === 'dark' ? 'light' : 'dark';
+	const { theme, isDark } = useThemeContext();
+	const textColor = isDark ? 'light' : 'dark';
 
 	return (
 		<footer
-			className={`fixed-bottom py-3 text-center fs-5 font-weight-bold bg-${theme} text-${textColor}`}
+			className={`fixed-bottom py-2 text-center bg-${theme} text-${textColor}`}
 		>
-			&copy; Thiago S. Marcelino
+			<strong>&copy; Thiago S. Marcelino</strong>
 		</footer>
 	);
 };

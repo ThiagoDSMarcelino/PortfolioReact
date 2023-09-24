@@ -1,4 +1,4 @@
-import '../styles/useful.sass';
+import '../styles/main.sass';
 
 import Card from 'react-bootstrap/Card';
 import Repository from '../models/Repository';

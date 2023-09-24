@@ -1,4 +1,4 @@
-import '../styles/overlay.sass';
+import '../styles/main.sass';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
@@ -14,7 +14,7 @@ const LoadingOverlay: React.FC = () => {
 	}
 
 	return (
-		<div className='test'>
+		<div className='overlay'>
 			<Stack
 				direction='horizontal'
 				gap={3}
