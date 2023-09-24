@@ -1,4 +1,4 @@
-import LoadingContext from './LoadingContext';
+import LoadingContext from '../contexts/LoadingContext';
 import LoadingData from '../models/LoadingData';
 import ProviderProps from '../models/ProviderProps';
 import { useState } from 'react';

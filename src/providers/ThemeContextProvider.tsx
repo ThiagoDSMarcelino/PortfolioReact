@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import ProviderProps from '../models/ProviderProps';
-import ThemeContext from './ThemeContext';
+import ThemeContext from '../contexts/ThemeContext';
 import ThemeData from '../models/ThemeData';
 
 const ThemeProvider = ({ children }: ProviderProps) => {

@@ -53,6 +53,10 @@ const Header: React.FC = () => {
 							>
 								<Nav.Link onClick={toggleTheme}>
 									<FontAwesomeIcon
+										style={{
+											width: '20px',
+											justifyContent: 'center',
+										}}
 										icon={themeIcon}
 										size='lg'
 									/>
