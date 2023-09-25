@@ -28,11 +28,11 @@ const ProjectPages: React.FC = () => {
 	}, []);
 
 	return (
-		<Container>
+		<Container className='pb-3'>
 			<Row className='justify-content-center g-3'>
-				{repos.map((repo, index) => (
-					<Col md={8}>
-						<DisplayRepository repo={repo} key={index} />
+				{repos.map((repo, i) => (
+					<Col md={8} key={i}>
+						<DisplayRepository repo={repo} />
 					</Col>
 				))}
 			</Row>

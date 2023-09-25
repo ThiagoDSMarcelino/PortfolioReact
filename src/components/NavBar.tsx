@@ -4,7 +4,7 @@ import Menu from './Menu';
 import Navbar from 'react-bootstrap/Navbar';
 import { useThemeContext } from '../contexts/ThemeContext';
 
-const Header: React.FC = () => {
+const NavBar: React.FC = () => {
 	const { theme } = useThemeContext();
 
 	return (
@@ -22,4 +22,4 @@ const Header: React.FC = () => {
 	);
 };
 
-export default Header;
+export default NavBar;

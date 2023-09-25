@@ -3,8 +3,7 @@ import './styles/main.sass';
 
 import { Route, Routes } from 'react-router-dom';
 
-import Footer from './components/Footer';
-import Header from './components/Header';
+import NavBar from './components/NavBar';
 import HomePage from './views/HomePage';
 import LoadingOverlay from './components/LoadingOverlay';
 import LoadingProvider from './providers/LoadingContextProvider';
@@ -18,13 +17,12 @@ const App: React.FC = () => {
 		<LoadingProvider>
 			<ThemeProvider>
 				<LoadingOverlay />
-				<Header />
+				<NavBar />
 				<Routes>
 					<Route path='/' element={<HomePage />} />
 					<Route path='/projects' element={<ProjectPages />} />
 					<Route path='*' element={<Page404 />} />
 				</Routes>
-				<Footer />
 			</ThemeProvider>
 		</LoadingProvider>
 	);
