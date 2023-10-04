@@ -3,10 +3,10 @@ import './styles/main.sass';
 
 import { Route, Routes } from 'react-router-dom';
 
-import NavBar from './components/NavBar';
 import HomePage from './views/HomePage';
 import LoadingOverlay from './components/LoadingOverlay';
 import LoadingProvider from './providers/LoadingContextProvider';
+import NavBar from './components/NavBar';
 import Page404 from './views/Page404';
 import ProjectPages from './views/ProjectsPage';
 import React from 'react';

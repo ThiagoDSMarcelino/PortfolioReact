@@ -1,38 +1,39 @@
+import ServiceError, { ServiceErrorType } from '../errors/ServiceErrors';
 import axios, { AxiosResponse } from 'axios';
 
 import Repository from '../models/Repository';
+import stringToTime from '../utils/stringToTime';
 
 class GitHubService {
-	static Username = 'ThiagoDSMarcelino';
+	private username: string;
 
-	static getAllRepos = async (): Promise<Repository[]> => {
+	constructor(username: string) {
+		this.username = username;
+	}
+
+	public getAllRepos = async (): Promise<Repository[]> => {
 		try {
 			const response: AxiosResponse = await axios.get(
-				`https://api.github.com/users/${this.Username}/repos`,
+				`https://api.github.com/users/${this.username}/repos`,
 			);
 
 			const data: Repository[] = response.data;
 			const formattedData = data
-				.filter((repo) => repo.name !== this.Username)
+				.filter((repo) => repo.name !== this.username)
 				.map((repo) => {
 					repo.name = repo.name.replace(/-/g, ' ');
 					return repo;
 				})
 				.sort(
 					(a, b) =>
-						this.stringToDate(b.updated_at).getTime() -
-						this.stringToDate(a.updated_at).getTime(),
+						stringToTime(b.updated_at) - stringToTime(a.updated_at),
 				);
 
 			return formattedData;
 		} catch (error) {
-			throw new Error(`Error: ${error}`);
+			throw new ServiceError(ServiceErrorType.Connection);
 		}
 	};
-
-	private static stringToDate(data: string) {
-		return new Date(data);
-	}
 }
 
 export default GitHubService;

@@ -1,9 +1,8 @@
 import '../styles/main.sass';
 
+import { Badge } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import Repository from '../models/Repository';
-import { Badge } from 'react-bootstrap';
-import { useThemeContext } from '../contexts/ThemeContext';
 
 interface Props {
 	repo: Repository;

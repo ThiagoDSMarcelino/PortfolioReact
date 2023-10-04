@@ -1,7 +1,7 @@
 {
 	"name": "portfolio",
-	"version": "0.1.0",
-	"homepage": "https://thiagodsmarcelino.github.io/portfolio/",
+	"version": "0.1.1",
+	"homepage": "https://thiagodsmarcelino.github.io/",
 	"private": true,
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^6.4.2",

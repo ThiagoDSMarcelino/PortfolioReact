@@ -6,7 +6,6 @@ import DisplayRepository from '../components/DisplayRepository';
 import GitHubService from '../services/GitHubService';
 import Repository from '../models/Repository';
 import Row from 'react-bootstrap/Row';
-import { faL } from '@fortawesome/free-solid-svg-icons';
 import { useLoadingContext } from '../contexts/LoadingContext';
 
 const ProjectPages: React.FC = () => {
@@ -15,16 +14,18 @@ const ProjectPages: React.FC = () => {
 
 	useEffect(() => {
 		const getData = async () => {
+			setLoading(true);
 			try {
-				GitHubService.getAllRepos().then((res) => setRepos(res));
+				const service = new GitHubService('ThiagoDSMarcelino');
+				const res = await service.getAllRepos();
+				setRepos(res);
 			} catch (error) {
 				console.error(error);
 			}
+			setLoading(false);
 		};
 
-		setLoading(true);
 		getData();
-		setLoading(false);
 	}, []);
 
 	return (
